@@ -1,0 +1,354 @@
+@import '_variables';
+ 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  display: block;
+  text-decoration: none;
+}
+a:hover, a:active{
+  text-decoration: none;
+  outline: none;
+}
+html{
+  font-size: 14px;
+  font-family: $font_basic;
+  font-weight: 400;
+  line-height: 26px;
+  color: $color_basic;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+// .arrow{
+//   position: relative;
+//   width: 20px;
+//   height: 35px;
+//   &::after{
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     top: 9px;
+//     left: 0;
+//     width: 20px;
+//     height: 5px;
+//     background: #fff;
+//     border-radius: 2px;
+//     transform: rotate(45deg);
+//     -webkit-transform: rotate(45deg);
+//     -moz-transform: rotate(45deg);
+//     -ms-transform: rotate(45deg);
+//     -o-transform: rotate(45deg);
+//     -webkit-border-radius: 2px;
+//     -moz-border-radius: 2px;
+//     -ms-border-radius: 2px;
+//     -o-border-radius: 2px;
+//   }
+//   &::before{
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     top: 20px;
+//     left: 0;
+//     width: 20px;
+//     height: 5px;
+//     background: #fff;
+//     border-radius: 2px;
+//     transform: rotate(45deg);
+//     -webkit-transform: rotate(-45deg);
+//     -moz-transform: rotate(-45deg);
+//     -ms-transform: rotate(-45deg);
+//     -o-transform: rotate(-45deg);
+//   }
+// }
+// ================= header ================= //
+.header{
+  background: $bg_header;
+  color: $color_header;
+  padding: 35px;
+  &-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .list_link{
+      display: flex;
+      .link{
+        color: $color_header;
+        font-size: 15px;
+        margin: 0 10px;
+        text-transform: uppercase;
+        &:hover{
+          color: #0299b0;
+        }
+      }
+    }
+  }
+  .mobil_logo, .mobil_burger, .mobil_menu{
+    display: none;
+  }
+  .mobil_logo{
+    font-size: 20px;
+  }
+  .mobil_burger{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: #1a2024;
+    width: 96px;
+    padding: 35px;
+    top: 0;
+    right: 0;
+    .fas{
+      font-size: 30px;
+    }
+  }
+  .mobil_menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background: $bg_header;
+  }
+}
+// ================= main =================== //
+.main{
+  .block_1{
+    // background: #0299b0;
+    // padding: 200px 50px 150px;
+    // color: #fff;
+    // &-inner{
+    //   width: 695px;
+    //   line-height: 1.2;
+    // }
+    // &-title{
+    //   h1{
+    //     font-size: 60px;
+    //     font-weight: 500;
+    //   }
+    // }
+    // &-text{
+    //   width: 100%;
+    //   font-size: 34px;
+    //   display: flex;
+    //   justify-content: space-between;
+    //   a{
+    //     color: rgba(255,255,255,0.6);
+    //     &:hover{
+    //       text-decoration: underline;
+    //     }
+    //   }
+    //   .arrow{
+    //     &:before{
+    //       width: 17px;
+    //       top: 25px;
+    //     }
+    //     &:after{
+    //       width: 17px;
+    //       top: 15px;
+    //     }
+    //   }
+    // }
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .block_2{
+    // &-inner{
+    //   display: flex;
+    //   flex-wrap: nowrap;
+    //   height: 245px;
+    //   font-size: 24px;
+    // }
+    // &-info{
+    //   padding: 0 100px;
+    //   background: #221b28;
+    //   display: flex;
+    //   color: #9383a1;
+    //   align-items: center;
+    //   width: 100%;
+    //   h4{
+    //     font-weight: 500;
+    //   }
+    // }
+    // &-arrow{
+    //   background: #bd2d84;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   min-width: 200px;
+    // }
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .block_3{
+    &-inner{
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    &-item{
+      width: 100%;
+      line-height: 1;
+      img{
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+  .block_4{
+    background: #eedbff;
+    padding: 20px 60px 150px;
+    h2{
+      color: #088ca5;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 44px;
+      text-shadow: 0px 1px 0px #ffffff;
+      margin-bottom: 10px;
+    }
+    &-content{
+      display: flex;
+      &-item{
+        width: 48%;
+        &:first-child{
+          margin-right: 4%;
+        }
+        p{
+          font-size: 14px;
+          line-height: 26px;
+          margin-bottom: 25px;
+          text-shadow: 0px 1px 0px #ffffff;
+        }
+      }
+    }
+  }
+}
+// ================= media ================= //
+@media screen and (max-width: 980px) {
+  // .main{
+  //   .block_1{
+  //     padding: 170px 50px 130px;
+  //     &-inner{
+  //       min-width: 350px;
+  //       width: 70%;
+  //     }
+  //   }
+  //   .block_2{
+  //     &-inner{
+  //       height: 234px;
+  //     }
+  //   }
+  // }
+  .block_4{
+    padding: 20px 60px 100px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header{
+    padding: 24px;
+    .list_link{
+      display: none;
+    }
+    .mobil_logo{
+      display: block;
+    }
+    .mobil_burger{
+      display: flex;
+      padding: 22px;
+    }
+  }
+  .main{
+    // .block_1{
+    //   padding: 100px 20px 50px;
+    //   &-inner{
+    //     width: 350px;
+    //   }
+    //   &-title{
+    //     h1{
+    //       font-size: 30px;
+    //     }
+    //   }
+    //   &-text{
+    //     font-size: 20px;
+    //   }
+    // }
+    // .block_2{
+    //   &-inner{
+    //     height: 153px;
+    //     font-size: 18px;
+    //   }
+    //   &-info{
+    //     padding: 0 50px;
+    //   }
+    //   &-arrow{
+    //     min-width: 150px;
+    //   }
+    // }
+    .block_3{
+      &-inner{
+        flex-direction: column;
+      }
+    }
+    .block_4{
+      padding: 20px 60px 60px;
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .header{
+    padding: 6px 15px;
+    .mobil_logo{
+      font-size: 14px;
+    }
+    .mobil_burger{
+      padding: 10px;
+      width: initial;
+      .fas{
+        font-size: 18px;
+      }
+    }
+  }
+  .main{
+    // .block_1{
+    //   padding: 170px 50px 130px;
+    //   font-size: 20px;
+    //   &-title{
+    //     h1{
+    //       font-size: 22px;
+    //     }
+    //   }
+    //   &-text{
+    //     font-size: 14px;
+    //   }
+    // }
+    // .block_2{
+    //   &-inner{
+    //     height: 77px;
+    //   }
+    // }
+    .block_4{
+      padding: 15px;
+      h2{
+        font-size: 19px;
+      }
+      &-content{
+        font-size: 13.5px;
+        flex-direction: column;
+        &-item{
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
